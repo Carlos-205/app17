@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">app17</string>
+    <string name="mensaje_bienvenida">App17</string>
+    <string name="miNombre">Carlos Andrés Peña Peña</string>
+    <string name="txt_scndScreenNameApp">app17</string>
+    <string name="txt_descripciónBienvenida">Inicia una nueva aventura con app17 y descubre una nueva forma de ver el mundo</string>
+    <string name="txt_registerScndScreen">Registrate</string>
+    <string name="txt_startButton">Comienza</string>
+    <string name="txt_nombreAppthirdScreen">app17</string>
+    <string name="txt_descripcionthirdScreen">La aventura esta por iniciar, por favor inicia sesión.</string>
+    <string name="txt_buttoningresar">Ingresar</string>
+    <string name="txt_recoverpassword">Recupera Tu Contraseña</string>
+    <string name="donthaveaccount">No tienes cuenta?</string>
+    <string name="nombres">Name</string>
+    <string name="names">Name</string>
+    <string name="txt_register">Registrate</string>
+    <string name="txt_google">Ingresa con Google</string>
+</resources>

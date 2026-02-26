@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje_bienvenida">App17</string>
+    <string name="miNombre">Carlos Andrés Peña Peña</string>
+    <string name="txt_google">Ingresa con Google</string>
+</resources>
