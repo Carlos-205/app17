@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".activities.app17activity">
-
+    <!-- prueba commit de git dos -->
     <ImageView
         android:id="@+id/tv_bienvenida"
         android:layout_width="344dp"
