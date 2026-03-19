@@ -15,4 +15,12 @@
     <string name="names">Name</string>
     <string name="txt_register">Registrate</string>
     <string name="txt_google">Ingresa con Google</string>
+
+    <string name="txt_datoslogin_register">Ingresa tus datos</string>
+    <string name="txt_hintnombre_register">Nombre</string>
+    <string name="txt_hintcorreo_register">Correo</string>
+    <string name="txt_hintpassword_register">Contraseña</string>
+    <string name="txt_hintnumber_register">Número</string>
+    <string name="txt_bttncontinuar_register">Continuar</string>
+    <string name="txt_backlogin_register">Regresar a Login</string>
 </resources>

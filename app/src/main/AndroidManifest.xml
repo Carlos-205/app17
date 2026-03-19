@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App17">
         <activity
+            android:name=".activities.app17_screenregister"
+            android:exported="false" />
+        <activity
             android:name=".activities.app17ThirdScreen"
             android:exported="false" />
         <activity
