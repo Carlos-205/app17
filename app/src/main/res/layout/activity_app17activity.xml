@@ -7,7 +7,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".activities.app17activity">
+    tools:context=".inicio.app17_screensplash">
     <!-- prueba commit de git dos -->
     <ImageView
         android:id="@+id/tv_bienvenida"

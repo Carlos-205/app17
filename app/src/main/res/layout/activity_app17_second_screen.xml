@@ -7,7 +7,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".activities.app17SecondScreen">
+    tools:context=".inicio.app17_screenstarting">
 
     <ImageView
         android:id="@+id/tv_bienvenidaScndScreen"

@@ -8,7 +8,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".activities.app17ThirdScreen">
+    tools:context=".auth.app17_screenlogin">
 
     <!-- Header -->
     <LinearLayout

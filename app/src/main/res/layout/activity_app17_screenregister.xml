@@ -9,7 +9,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".activities.app17_screenregister">
+    tools:context=".auth.app17_screenregister">
 
     <LinearLayout
         android:layout_width="match_parent"

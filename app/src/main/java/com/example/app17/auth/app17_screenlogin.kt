@@ -1,4 +1,4 @@
-package com.example.app17.activities
+package com.example.app17.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app17.R
 
-class app17ThirdScreen : AppCompatActivity() {
+class app17_screenlogin : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

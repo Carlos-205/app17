@@ -1,15 +1,14 @@
-package com.example.app17.activities
+package com.example.app17.inicio
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.app17.R
+import com.example.app17.auth.app17_screenlogin
 
-class app17SecondScreen : AppCompatActivity() {
+class app17_screenstarting : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -17,7 +16,7 @@ class app17SecondScreen : AppCompatActivity() {
 
         val btn: Button = findViewById<Button>(R.id.button_Start)
         btn.setOnClickListener {
-            val intent: Intent = Intent(this, app17ThirdScreen:: class.java)
+            val intent: Intent = Intent(this, app17_screenlogin::class.java)
             startActivity(intent)
         }
     }

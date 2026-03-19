@@ -1,4 +1,4 @@
-package com.example.app17.activities
+package com.example.app17.inicio
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,18 +6,17 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.app17.R
+import com.example.app17.inicio.app17_screenstarting
 
-class app17activity : AppCompatActivity() {
+class app17_screensplash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_app17activity)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, app17SecondScreen::class.java))
+            startActivity(Intent(this, app17_screenstarting::class.java))
             finish()
         },5000)
     }

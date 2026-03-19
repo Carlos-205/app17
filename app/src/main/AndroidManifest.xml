@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App17">
         <activity
-            android:name=".activities.app17_screenregister"
+            android:name=".auth.app17_screenregister"
             android:exported="false" />
         <activity
-            android:name=".activities.app17ThirdScreen"
+            android:name=".auth.app17_screenlogin"
             android:exported="false" />
         <activity
-            android:name=".activities.app17SecondScreen"
+            android:name=".inicio.app17_screenstarting"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.app17activity"
+            android:name=".inicio.app17_screensplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
