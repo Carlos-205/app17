@@ -7,13 +7,12 @@ import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app17.R
-import com.example.app17.inicio.app17_screenstarting
 
 class app17_screensplash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_app17activity)
+        setContentView(R.layout.activity_app17_screensplashh)
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, app17_screenstarting::class.java))

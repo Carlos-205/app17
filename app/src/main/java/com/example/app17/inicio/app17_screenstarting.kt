@@ -12,7 +12,7 @@ class app17_screenstarting : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_app17_second_screen)
+        setContentView(R.layout.activity_app17_screenstart)
 
         val btn: Button = findViewById<Button>(R.id.button_Start)
         btn.setOnClickListener {

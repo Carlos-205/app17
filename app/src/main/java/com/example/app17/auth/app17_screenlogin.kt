@@ -12,7 +12,7 @@ class app17_screenlogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_app17_third_screen)
+        setContentView(R.layout.activity_app17_screenlogin)
 
         val registrate = findViewById<TextView>(R.id.txt_register)
 
