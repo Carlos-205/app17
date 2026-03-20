@@ -23,4 +23,6 @@
     <string name="txt_hintnumber_register">Número</string>
     <string name="txt_bttncontinuar_register">Continuar</string>
     <string name="txt_backlogin_register">Regresar a Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
