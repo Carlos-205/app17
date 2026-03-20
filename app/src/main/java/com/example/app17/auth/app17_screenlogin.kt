@@ -14,12 +14,8 @@ class app17_screenlogin : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_app17_screenlogin)
 
-        val registrate = findViewById<TextView>(R.id.txt_register)
-
-        registrate.setOnClickListener {
-
-            val intent = Intent(this, app17_screenregister::class.java)
-            startActivity(intent)
+        findViewById<TextView>(R.id.txt_register).setOnClickListener {
+            startActivity(Intent(this, app17_screenregister::class.java))
         }
     }
 }

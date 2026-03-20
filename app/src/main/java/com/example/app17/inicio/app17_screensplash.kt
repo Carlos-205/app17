@@ -17,6 +17,6 @@ class app17_screensplash : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, app17_screenstarting::class.java))
             finish()
-        },5000)
+        },3000)
     }
 }
