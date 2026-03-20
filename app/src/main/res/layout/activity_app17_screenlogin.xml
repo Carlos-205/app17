@@ -161,7 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/donthaveaccount"
-            android:textSize="17sp" />
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/txt_register"
@@ -170,7 +170,7 @@
             android:layout_marginStart="8dp"
             android:text="@string/txt_register"
             android:textColor="@color/bttoncolor"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
 </LinearLayout>
