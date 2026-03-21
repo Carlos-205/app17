@@ -29,4 +29,9 @@
     <string name="title_inicio">Inicio</string>
     <string name="title_catalogo">catalogo</string>
     <string name="title_favoritos">favoritos</string>
+    <string name="title_ejemploUno">dirección</string>
+    <string name="title_ejemploDos">lupita</string>
+    <string name="title_agregar">agregar</string>
+    <string name="title_flecha">flechita</string>
+    <string name="title_dia">día</string>
 </resources>

@@ -6,4 +6,22 @@
         android:title="@string/title_favoritos"
         android:icon="@android:drawable/star_big_off"
         />
+
+    <item
+        android:id="@+id/nav_add"
+        android:title="@string/title_agregar"
+        android:icon="@android:drawable/ic_menu_add"
+        />
+
+    <item
+        android:id="@+id/nav_flecha"
+        android:title="@string/title_flecha"
+        android:icon="@android:drawable/ic_menu_send"
+        />
+
+    <item
+        android:id="@+id/nav_dia"
+        android:title="@string/title_dia"
+        android:icon="@android:drawable/ic_menu_day"
+        />
 </menu>

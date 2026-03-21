@@ -12,4 +12,14 @@
         android:icon="@android:drawable/ic_menu_gallery"
         />
 
+    <item
+        android:id="@+id/nav_ejemplouno"
+        android:title="@string/title_ejemploUno"
+        android:icon="@android:drawable/ic_menu_directions"/>
+
+    <item
+        android:id="@+id/nav_ejemplodos"
+        android:title="@string/title_ejemploDos"
+        android:icon="@android:drawable/ic_menu_search" />
+
 </menu>
