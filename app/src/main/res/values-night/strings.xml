@@ -7,4 +7,6 @@
     <string name="title_inicio">Inicio</string>
     <string name="title_ejemploDos">lupita</string>
     <string name="title_ejemploUno">dirección</string>
+    <string name="navigation_drawer_open">Menu abierto</string>
+    <string name="navigation_drawer_close">Menu Cerrado</string>
 </resources>
