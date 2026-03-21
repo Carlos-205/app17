@@ -8,7 +8,8 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".auth.app17_screenlogin">
+    tools:context=".auth.app17_screenlogin"
+    android:fitsSystemWindows="true">
 
     <!-- Header -->
     <LinearLayout

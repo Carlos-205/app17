@@ -7,7 +7,8 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".inicio.app17_screensplash">
+    tools:context=".inicio.app17_screensplash"
+    android:fitsSystemWindows="true">
 
     <ImageView
         android:id="@+id/tv_bienvenida"
