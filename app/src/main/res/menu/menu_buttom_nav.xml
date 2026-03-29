@@ -13,13 +13,13 @@
         />
 
     <item
-        android:id="@+id/nav_ejemplouno"
-        android:title="@string/title_ejemploUno"
-        android:icon="@android:drawable/ic_menu_directions"/>
+        android:id="@+id/nav_carrito"
+        android:title="@string/title_carrito"
+        android:icon="@android:drawable/ic_menu_add"/>
 
     <item
-        android:id="@+id/nav_ejemplodos"
-        android:title="@string/title_ejemploDos"
-        android:icon="@android:drawable/ic_menu_search" />
+        android:id="@+id/nav_perfil"
+        android:title="@string/title_perfil"
+        android:icon="@android:drawable/ic_menu_myplaces" />
 
 </menu>
