@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    android:orientation="vertical"
     tools:context=".main.productos.home_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_productos_destacados"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_productos"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Inicio" />
+        android:padding="10dp"
+        android:clipToPadding="false"
+        />
 
 </LinearLayout>
