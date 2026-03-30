@@ -9,9 +9,12 @@ import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.app17.R
+import com.example.app17.main.admin.admin_fragment
+import com.example.app17.main.admin.usuarios_fragment
 import com.example.app17.main.perfil.perfil_fragment
 import com.example.app17.main.productos.carrito_fragment
 import com.example.app17.main.productos.catalogo_fragment
+import com.example.app17.main.productos.favoritos_fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.example.app17.main.productos.home_fragment
@@ -59,6 +62,16 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_carrito -> cargarFragment(carrito_fragment())
                 R.id.nav_perfil -> cargarFragment(perfil_fragment())
             }
+            true
+        }
+
+        navView.setNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_favoritos -> cargarFragment(favoritos_fragment())
+                R.id.nav_admin -> cargarFragment(admin_fragment())
+                R.id.nav_usuarios -> cargarFragment(usuarios_fragment())
+            }
+            drawerLayout.closeDrawers()
             true
         }
     }

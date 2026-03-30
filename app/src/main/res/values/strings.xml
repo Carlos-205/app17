@@ -31,8 +31,8 @@
     <string name="title_favoritos">favoritos</string>
     <string name="title_carrito">carrito</string>
     <string name="title_perfil">perfil</string>
-    <string name="title_agregar">agregar</string>
-    <string name="title_flecha">flechita</string>
+    <string name="title_admin">admin</string>
+    <string name="title_usuarios">usuarios</string>
     <string name="title_dia">día</string>
     <string name="navigation_drawer_open">Menu abierto</string>
     <string name="navigation_drawer_close">Menu Cerrado</string>
