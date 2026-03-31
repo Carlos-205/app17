@@ -18,7 +18,7 @@ class home_fragment : Fragment() {
     private val listaProductos = listOf(
         Product ("Bolsa Estilo Medival", 7.99, R.drawable.bolsa_medieval),
         Product ("Gaban Color Caqui", 27.99, R.drawable.gaban_caqui),
-        Product ("Botas Aesthetic", 12.99, R.drawable.botas_aesthetic),
+        Product ("Botas Asthetic", 12.99, R.drawable.botas_aesthetic),
         Product ("Steampunk Glasses", 4.99, R.drawable.steampunk_glasses)
     )
 
