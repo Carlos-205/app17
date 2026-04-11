@@ -2,18 +2,17 @@ package com.example.app17.auth
 
 import android.os.Bundle
 import android.view.ViewGroup
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.app17.R
 
-class app17_screenregister : AppCompatActivity() {
+class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        setContentView(R.layout.activity_app17_screenregister)
+        setContentView(R.layout.activity_registro)
 
         val rootView = findViewById<ViewGroup>(R.id.main)
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->

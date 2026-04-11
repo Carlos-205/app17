@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App17">
         <activity
-            android:name=".auth.app17_screenregister"
+            android:name=".auth.RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".auth.app17_screenlogin"

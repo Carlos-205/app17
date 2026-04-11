@@ -8,7 +8,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".auth.app17_screenregister"
+    tools:context=".auth.RegistroActivity"
     android:fitsSystemWindows="true">
 
     <LinearLayout

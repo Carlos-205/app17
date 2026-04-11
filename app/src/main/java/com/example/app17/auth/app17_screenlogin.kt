@@ -14,10 +14,10 @@ class app17_screenlogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_app17_screenlogin)
+        setContentView(R.layout.activity_login)
 
         findViewById<TextView>(R.id.txt_register).setOnClickListener {
-            startActivity(Intent(this, app17_screenregister::class.java))
+            startActivity(Intent(this, RegistroActivity::class.java))
         }
 
         findViewById<Button>(R.id.button_ingresar).setOnClickListener {
