@@ -18,7 +18,7 @@
             android:name=".auth.RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".auth.app17_screenlogin"
+            android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".inicio.app17_screenstarting"

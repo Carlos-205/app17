@@ -8,7 +8,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".auth.app17_screenlogin"
+    tools:context=".auth.LoginActivity"
     android:fitsSystemWindows="true">
 
     <!-- Header -->

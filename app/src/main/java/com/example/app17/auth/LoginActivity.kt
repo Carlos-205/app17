@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.app17.R
 import com.example.app17.main.MainActivity
 
-class app17_screenlogin : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -45,78 +45,92 @@
         android:textSize="25sp"
         android:textStyle="italic"
         android:layout_marginTop="20dp" />
-    <!--scroll view -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true" />
+        android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
 
-        <EditText
-            android:id="@+id/editTextNombre"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint="@string/txt_hintnombre_register"
-            android:background="@drawable/style_edit_txt"
-            android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="@string/txt_hintnombre_register"
+                android:background="@drawable/style_edit_txt"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"
+                android:inputType="textPersonName"/>
 
-        <EditText
-            android:id="@+id/editTextCorreo"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint="@string/txt_hintcorreo_register"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/style_edit_txt"
-            android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editTextCorreo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="@string/txt_hintcorreo_register"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/style_edit_txt"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"/>
 
-        <EditText
-            android:id="@+id/editTextContraseña"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint="@string/txt_hintpassword_register"
-            android:inputType="textPassword"
-            android:background="@drawable/style_edit_txt"
-            android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="@string/txt_hintpassword_register"
+                android:inputType="textPassword"
+                android:background="@drawable/style_edit_txt"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"/>
 
-        <EditText
-            android:id="@+id/editTextNumberDecimal2"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:layout_marginTop="10dp"
-            android:inputType="numberDecimal"
-            android:background="@drawable/style_edit_txt"
-            android:hint="@string/txt_hintnumber_register" />
+            <EditText
+                android:id="@+id/txtNumeroRegistro"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:background="@drawable/style_edit_txt"
+                android:hint="@string/txt_hintnumber_register"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn_registro"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/txt_bttncontinuar_register"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/bttoncolor"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/txt_bttncontinuar_register"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/bttoncolor"
-        app:strokeColor="#FFFFFF"
-        app:strokeWidth="3dp"/>
+            <TextView
+                android:id="@+id/textViewRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_backlogin_register"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"/>
 
-    <TextView
-        android:id="@+id/textViewRegresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_backlogin_register"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
