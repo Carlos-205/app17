@@ -16,4 +16,5 @@
     <string name="imagen_del_producto">Imagen del producto</string>
     <string name="txt_productos_destacados">Productos destacados</string>
     <string name="txt_agregar_al_carrito">Agregar al carrito</string>
+    <string name="txt_editDatos">Modificar Datos</string>
 </resources>
