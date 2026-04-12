@@ -120,16 +120,6 @@
                 app:strokeColor="#FFFFFF"
                 app:strokeWidth="3dp"/>
 
-            <TextView
-                android:id="@+id/textViewRegresarPerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txt_backlogin_register"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="20dp"
-                android:paddingBottom="20dp"/>
-
         </LinearLayout>
     </ScrollView>
 
