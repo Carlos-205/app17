@@ -42,9 +42,6 @@
         android:text="@string/txt_descripcionthirdScreen"
         android:textAlignment="center"
         android:textSize="22sp"
-
-        android:textColor="@color/white"
-
         android:textStyle="italic" />
 
     <!-- User Field -->
@@ -119,6 +116,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:text="@string/txt_recoverpassword"
+        android:layout_margin="20dp"
         android:textSize="17sp" />
 
     <View
