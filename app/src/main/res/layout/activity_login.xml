@@ -8,7 +8,7 @@
     android:background="@color/backgroundApp"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".auth.app17_screenlogin"
+    tools:context=".auth.LoginActivity"
     android:fitsSystemWindows="true">
 
     <!-- Header -->
@@ -116,6 +116,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:text="@string/txt_recoverpassword"
+        android:layout_margin="20dp"
         android:textSize="17sp" />
 
     <View

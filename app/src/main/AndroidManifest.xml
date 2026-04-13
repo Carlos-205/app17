@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App17">
         <activity
-            android:name=".auth.app17_screenregister"
+            android:name=".auth.RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".auth.app17_screenlogin"
+            android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".inicio.app17_screenstarting"
