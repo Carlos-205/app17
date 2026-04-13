@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".inicio.app17_screenstarting"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/tv_bienvenidaScndScreen"
+        android:layout_width="349dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/txt_nameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_scndScreenNameApp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_descripcionBienvenida"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_descripciónBienvenida"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_Start"
+        android:layout_width="181dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/bttoncolor"
+        android:text="@string/txt_startButton"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="@string/txt_registerScndScreen"
+        android:textSize="22sp" />
+
+</LinearLayout>

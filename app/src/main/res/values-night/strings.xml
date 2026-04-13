@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje_bienvenida">App17</string>
+    <string name="miNombre">Carlos Andrés Peña Peña</string>
+    <string name="txt_google">Ingresa con Google</string>
+    <string name="txt_mitienda">Mi Tienda</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_perfil">perfil</string>
+    <string name="title_carrito">carrito</string>
+
+    <string name="title_admin">admin</string>
+    <string name="title_usuarios">usuarios</string>
+
+    <string name="navigation_drawer_open">Menu abierto</string>
+    <string name="navigation_drawer_close">Menu Cerrado</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="txt_productos_destacados">Productos destacados</string>
+    <string name="txt_agregar_al_carrito">Agregar al carrito</string>
+    <string name="txt_editDatos">Modificar Datos</string>
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">app17</string>
+    <string name="mensaje_bienvenida">App17</string>
+    <string name="miNombre">Carlos Andrés Peña Peña</string>
+    <string name="txt_scndScreenNameApp">app17</string>
+    <string name="txt_descripciónBienvenida">Inicia una nueva aventura con app17 y descubre una nueva forma de ver el mundo</string>
+    <string name="txt_registerScndScreen">Registrate</string>
+    <string name="txt_startButton">Comienza</string>
+    <string name="txt_nombreAppthirdScreen">app17</string>
+    <string name="txt_descripcionthirdScreen">La aventura esta por iniciar, por favor inicia sesión.</string>
+    <string name="txt_buttoningresar">Ingresar</string>
+    <string name="txt_recoverpassword">Recupera Tu Contraseña</string>
+    <string name="donthaveaccount">No tienes cuenta?</string>
+    <string name="nombres">Name</string>
+    <string name="names">Name</string>
+    <string name="txt_register">Registrate</string>
+    <string name="txt_google">Ingresa con Google</string>
+
+    <string name="txt_datoslogin_register">Ingresa tus datos</string>
+    <string name="txt_hintnombre_register">Nombre</string>
+    <string name="txt_hintcorreo_register">Correo</string>
+    <string name="txt_hintpassword_register">Contraseña</string>
+    <string name="txt_hintnumber_register">Número</string>
+    <string name="txt_bttncontinuar_register">Continuar</string>
+    <string name="txt_backlogin_register">Regresar a Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_mitienda">Mi Tienda</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_catalogo">catalogo</string>
+    <string name="title_favoritos">favoritos</string>
+    <string name="title_carrito">carrito</string>
+    <string name="title_perfil">perfil</string>
+    <string name="title_admin">admin</string>
+    <string name="title_usuarios">usuarios</string>
+    <string name="title_dia">día</string>
+    <string name="navigation_drawer_open">Menu abierto</string>
+    <string name="navigation_drawer_close">Menu Cerrado</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="txt_productos_destacados">Productos destacados</string>
+    <string name="txt_agregar_al_carrito">Agregar al carrito</string>
+    <string name="txt_editDatos">Modificar Datos</string>
+</resources>
