@@ -59,13 +59,13 @@
             app:srcCompat="@mipmap/person" />
 
         <EditText
-            android:id="@+id/txt_edituser"
+            android:id="@+id/txt_incorreo"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:background="@drawable/style_edit_txt"
             android:ems="10"
-            android:hint="@string/names"
+            android:hint="@string/in_correo"
             android:inputType="text" />
     </LinearLayout>
 
@@ -84,14 +84,14 @@
             app:srcCompat="@mipmap/key" />
 
         <EditText
-            android:id="@+id/txt_editpassword"
+            android:id="@+id/txt_inpassword"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:layout_marginStart="16dp"
             android:background="@drawable/style_edit_txt"
             android:ems="10"
-            android:hint="@string/txt_hintpassword_register"
             android:inputType="textPassword"
+            android:hint="@string/in_contrasena"
             android:textSize="16sp" />
     </LinearLayout>
 

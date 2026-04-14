@@ -12,7 +12,7 @@
     <string name="txt_recoverpassword">Recupera Tu Contraseña</string>
     <string name="donthaveaccount">No tienes cuenta?</string>
     <string name="nombres">Name</string>
-    <string name="names">Name</string>
+    <string name="in_correo">Correo</string>
     <string name="txt_register">Registrate</string>
     <string name="txt_google">Ingresa con Google</string>
 
@@ -40,4 +40,5 @@
     <string name="txt_productos_destacados">Productos destacados</string>
     <string name="txt_agregar_al_carrito">Agregar al carrito</string>
     <string name="txt_editDatos">Modificar Datos</string>
+    <string name="in_contrasena">Contraseña</string>
 </resources>

@@ -7,6 +7,7 @@
     <string name="title_inicio">Inicio</string>
     <string name="title_perfil">perfil</string>
     <string name="title_carrito">carrito</string>
+    <string name="in_correo">Correo</string>
 
     <string name="title_admin">admin</string>
     <string name="title_usuarios">usuarios</string>
@@ -17,4 +18,5 @@
     <string name="txt_productos_destacados">Productos destacados</string>
     <string name="txt_agregar_al_carrito">Agregar al carrito</string>
     <string name="txt_editDatos">Modificar Datos</string>
+    <string name="in_contrasena">Contraseña</string>
 </resources>
