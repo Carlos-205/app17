@@ -41,4 +41,5 @@
     <string name="txt_agregar_al_carrito">Agregar al carrito</string>
     <string name="txt_editDatos">Modificar Datos</string>
     <string name="in_contrasena">Contraseña</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.example.app17.main
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +10,10 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.example.app17.R
+import com.example.app17.SupabaseClient
+import com.example.app17.auth.LoginActivity
 import com.example.app17.main.admin.admin_fragment
 import com.example.app17.main.admin.usuarios_fragment
 import com.example.app17.main.perfil.perfil_fragment
@@ -18,7 +23,8 @@ import com.example.app17.main.productos.favoritos_fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.example.app17.main.productos.home_fragment
-
+import io.github.jan.supabase.auth.auth
+import kotlinx.coroutines.launch
 
 
 class MainActivity : AppCompatActivity() {
@@ -70,6 +76,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_favoritos -> cargarFragment(favoritos_fragment())
                 R.id.nav_admin -> cargarFragment(admin_fragment())
                 R.id.nav_usuarios -> cargarFragment(usuarios_fragment())
+                R.id.nav_logout -> cerrarSesion()
+
             }
             drawerLayout.closeDrawers()
             true
@@ -79,5 +87,22 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
+    }
+
+    private fun cerrarSesion(){
+        lifecycleScope.launch {
+            try {
+                SupabaseClient.client.auth.signOut()
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity, "Sesión cerrada", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                    finish()
+                }
+            }catch (e: Exception){
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity, "Error al cerrar sesión: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
