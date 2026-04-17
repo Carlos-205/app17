@@ -31,24 +31,26 @@
             android:layout_marginStart="28dp"
             android:text="@string/txt_nombreAppthirdScreen"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <TextView
         android:id="@+id/txt_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/txt_descripcionthirdScreen"
         android:textAlignment="center"
         android:textSize="22sp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
 
     <!-- User Field -->
     <LinearLayout
         android:layout_width="383dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="17dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -66,14 +68,16 @@
             android:background="@drawable/style_edit_txt"
             android:ems="10"
             android:hint="@string/in_correo"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#686464" />
     </LinearLayout>
 
     <!-- Password Field -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -92,13 +96,15 @@
             android:ems="10"
             android:inputType="textPassword"
             android:hint="@string/in_contrasena"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#686464"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/button_ingresar"
         android:layout_width="208dp"
-        android:layout_height="57dp"
+        android:layout_height="53dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/bttoncolor"
@@ -106,6 +112,7 @@
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:strokeColor="#FFFFFF"
         app:strokeWidth="3dp" />
 
@@ -116,8 +123,20 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:text="@string/txt_recoverpassword"
-        android:layout_margin="20dp"
-        android:textSize="17sp" />
+        android:layout_margin="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/in_huella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/tv_inHuella"
+        android:layout_margin="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
 
     <View
         android:layout_width="match_parent"
@@ -163,7 +182,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/donthaveaccount"
-            android:textSize="19sp" />
+            android:textSize="19sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/txt_register"

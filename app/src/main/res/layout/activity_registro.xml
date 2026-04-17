@@ -69,7 +69,8 @@
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
                 android:textColor="@color/black"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName"
+                android:textColorHint="#686464"/>
 
             <EditText
                 android:id="@+id/editTextCorreo"
@@ -81,7 +82,8 @@
                 android:layout_marginTop="10dp"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textColorHint="#686464"/>
 
             <EditText
                 android:id="@+id/editTextPassword"
@@ -93,7 +95,8 @@
                 android:layout_marginTop="10dp"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textColorHint="#686464"/>
 
             <EditText
                 android:id="@+id/txtNumeroRegistro"
@@ -105,7 +108,8 @@
                 android:hint="@string/txt_hintnumber_register"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textColorHint="#686464"/>
 
             <Button
                 android:id="@+id/btn_registro"
