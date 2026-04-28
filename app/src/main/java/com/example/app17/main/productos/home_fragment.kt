@@ -9,11 +9,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app17.R
 
-/**
- * A simple [Fragment] subclass.
- * Use the [home_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class home_fragment : Fragment() {
     private val listaProductos = listOf(
         Product ("Bolsa Estilo Medival", 7.99, R.drawable.bolsa_medieval),
