@@ -2,6 +2,7 @@ package com.example.app17.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -14,6 +15,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.app17.R
 import com.example.app17.SupabaseClient
 import com.example.app17.auth.LoginActivity
+import com.example.app17.data.UsuarioRepository
 import com.example.app17.main.admin.admin_fragment
 import com.example.app17.main.admin.usuarios_fragment
 import com.example.app17.main.perfil.perfil_fragment
@@ -61,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         cargarFragment(home_fragment())
         bottomNav.selectedItemId = R.id.nav_home
 
+        configurarMenuPorRol(navView.menu)
+
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> cargarFragment(home_fragment())
@@ -83,6 +87,29 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
+
+    private fun configurarMenuPorRol(menu: Menu) {
+        lifecycleScope.launch {
+            val rol = UsuarioRepository.obtenerRolActual()
+            runOnUiThread {
+                when (rol) {
+                    "admin"->{
+                        menu.findItem(R.id.nav_admin).isVisible = true
+                        menu.findItem(R.id.nav_usuarios).isVisible = true
+                    }
+                    "vendedor" ->{
+                        menu.findItem(R.id.nav_admin).isVisible = true
+                        menu.findItem(R.id.nav_usuarios).isVisible = false
+                    }
+                    else ->{
+                        menu.findItem(R.id.nav_admin).isVisible = false
+                        menu.findItem(R.id.nav_usuarios).isVisible = false
+                    }
+                }
+            }
+        }
+    }
+
     private fun cargarFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)

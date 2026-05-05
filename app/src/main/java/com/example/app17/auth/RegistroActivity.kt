@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.app17.R
 import com.example.app17.SupabaseClient
+import com.example.app17.data.UsuarioRepository
 import io.github.jan.supabase.auth.auth
 import io.github.jan.supabase.auth.providers.builtin.Email
 import io.github.jan.supabase.postgrest.postgrest
@@ -79,7 +80,7 @@ class RegistroActivity : AppCompatActivity() {
                 Toast.makeText(this, "Por favor complete la información", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            if (contrasena.length < 8){
+            if (contrasena.length < 8) {
                 Toast.makeText(this, "La contraseña debe tener al menos 8 caracteres", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
@@ -94,13 +95,15 @@ class RegistroActivity : AppCompatActivity() {
                     }
                     //Paso 2: UUID y adicionales
                     val userId = SupabaseClient.client.auth.currentUserOrNull()?.id?:""
-                    SupabaseClient.client.postgrest["usuarios"].insert(
-                        UsuarioData(
-                            id = userId,
-                            nombres = nombres,
-                            numero = numero.toInt()
-                        )
+
+                    // CORRECCIÓN MÍNIMA: Llamar con los 4 parámetros que pide tu repositorio: id, nombres, numero, correo
+                    UsuarioRepository.insertarUsuario(
+                        userId,
+                        nombres,
+                        numero.toInt(),
+                        correo
                     )
+
                     //Paso 3. Registro Exitoso
                     runOnUiThread {
                         Toast.makeText(

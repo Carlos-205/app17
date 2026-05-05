@@ -21,4 +21,11 @@
     <string name="in_contrasena">Contraseña</string>
     <string name="cerrar_sesion">Cerrar sesion</string>
     <string name="tv_inHuella">Ingresar con tu huella</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="editar_perfil_titulo">Editar Perfil</string>
+    <string name="foto_de_perfil">foto de perfil</string>
+    <string name="cambiar_foto">Cambiar foto</string>
+    <string name="txt_hintNewPassword">Nueva contraseña</string>
+    <string name="txt_hintnewPasswordRepetir">Repetir nueva contraseña</string>
+    <string name="guardar_cambios">Guardar cambios</string>
 </resources>

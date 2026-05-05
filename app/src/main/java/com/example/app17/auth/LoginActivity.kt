@@ -31,6 +31,7 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.example.app17.data.CredencialesManager
+import com.example.app17.data.UsuarioRepository
 
 class LoginActivity : AppCompatActivity() {
 
@@ -94,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
                         email = correo
                         password = contrasena
                     }
-                    
+
                     // Guardamos las credenciales aquí después de un intento de login
                     CredencialesManager.guardarCredenciales(this@LoginActivity, correo, contrasena)
                     runOnUiThread {
@@ -148,6 +149,22 @@ class LoginActivity : AppCompatActivity() {
                     idToken = googleIdTokenCredential.idToken
                     provider = Google
                 }
+
+                //Verificar si es el primer login
+                val user = SupabaseClient.client.auth.currentUserOrNull()
+                if(user != null){
+                    val existe = UsuarioRepository.existeUsuario(user.id)
+                    if(!existe){
+                        // Extraer el nombre completo de los metadatos de Google
+                        val nombreCompleto = user.userMetadata?.get("full_name")?.toString()?.replace("\"", "") ?: "Usuario Google"
+                        val correoGoogle = user.email ?: ""
+                        val numero = 0
+
+                        // CORRECCIÓN: Llamada con 4 parámetros: id, nombres, numero, correo
+                        UsuarioRepository.insertarUsuario(user.id, nombreCompleto, numero, correoGoogle)
+                    }
+                }
+
                 runOnUiThread {
                     Toast.makeText(this@LoginActivity, "Inicio de sesión con Google exitoso", Toast.LENGTH_SHORT).show()
                     irAPantallaPrincipal()

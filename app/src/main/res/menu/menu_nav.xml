@@ -11,13 +11,13 @@
         android:id="@+id/nav_admin"
         android:title="@string/title_admin"
         android:icon="@android:drawable/ic_menu_manage"
-        />
+        android:visible="false"/>
 
     <item
         android:id="@+id/nav_usuarios"
         android:title="@string/title_usuarios"
         android:icon="@android:drawable/ic_menu_myplaces"
-        />
+        android:visible="false"/>
 
     <item
         android:id="@+id/nav_dia"
